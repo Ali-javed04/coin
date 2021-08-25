@@ -1,0 +1,141 @@
+.border-line {
+  border-bottom: 3px solid #214497;
+}
+.active {
+  border-bottom: 3px solid #FFB506;
+
+}
+.float-right {
+  justify-content: flex-end;
+  display: flex;
+}
+.custom-padding {
+  padding-bottom: 7.6px;
+}
+.specific-height {
+  height: 322px;
+  border: 1px solid #E7E7E7;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.specific-height2 {
+  height: 285px;
+  border: 1px solid #E7E7E7;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.specific-row-height {
+  height: 100vh;
+    overflow-y: scroll;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffff;
+  border-radius: 10px;
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  #E7E7E7;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #E7E7E7;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+.active1 {
+  fill: orange;
+}
+.div-height {
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+.img-background-height {
+  height: 75px;
+}
+.justify-center {
+  justify-content: center;
+  display: flex;
+  margin-top: -33px;
+}
+.h-title {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: Source Sans Pro;
+}
+.p-title {
+  font-size: 10px;
+
+  font-family: Source Sans Pro;
+}
+.btn-follow {
+  background: transparent;
+  color: #214497;
+  border: 2px solid #214497;
+  border-radius: 10px;
+  padding: 0px 19px;
+  font-size: xx-small;
+}
+.span-bold {
+  font-weight: 500;
+  color: #565D6D;
+}
+.profile-div {
+  border: 2px solid lightgray;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.border-none {
+  border: none
+}
+.recieve-bg {
+  background: #E7E7E7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+.send-bg {
+  background: #BCE0FD;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.message-p {
+  font-size: 12px;
+  font-family: Source Sans Pro;
+  color: #565D6D;
+
+}
+.flex-end {
+  justify-content: flex-end;
+  display: flex;
+}
+.following {
+  font-family:  Source Sans Pro;
+  font-size:8px;
+  color:#565D6D
+
+}
+.specific-top {
+  top:-8px
+}
+.loresm {
+  padding-left: 13px;
+    padding-right: 13px;
+
+}

@@ -1,0 +1,157 @@
+
+<div class="container-fluid">
+  <div class="specifc-way" >
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+
+    <div class="col-12 float-top">
+      <h4>My Listings</h4>
+    </div>
+    <div class="float-top1">
+      <svg id="arrow_back_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path id="Path_4128" data-name="Path 4128" d="M0,0H24V24H0Z" fill="none"/>
+        <path id="Path_4129" data-name="Path 4129" d="M20,11H7.83l5.59-5.59L12,4,4,12l8,8,1.41-1.41L7.83,13H20Z" fill="#214497"/>
+      </svg>
+
+    </div>
+
+       <!-- 2nd row  -->
+       <div class="container-fluid float-top2">
+         <div class="row">
+           <div class="col-md-6">
+             <p class="p-0 m-0 postion-absoulte">Add a free Listing</p>
+            <div class="row">
+              <div class="col-2 border-line-select m-0 p-0">
+
+                <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+             </div>
+             <div class="col-2 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+             </div>
+              <div class="col-1 border-line flex-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g id="Group_5757" data-name="Group 5757" transform="translate(24 24) rotate(180)">
+                    <g id="Component_114_374" data-name="Component 114 – 374" transform="translate(24 24) rotate(-180)">
+                      <g id="more_vert_black_24dp_1_" data-name="more_vert_black_24dp (1)">
+                        <path id="Path_4100" data-name="Path 4100" d="M0,0H24V24H0Z" fill="none"/>
+                        <path id="Path_4101" data-name="Path 4101" d="M12,8a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,8Zm0,2a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,10Zm0,6a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,16Z" fill="#214497"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+
+
+
+
+  <div class="col-12 float-center">
+    <div class="row abc-center">
+      <div class="col-md-5 custom-bg p-4 ">
+
+      <!-- ist part  -->
+      <div class="row">
+        <div class="col-1">
+          <svg id="arrow_back_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path id="Path_4128" data-name="Path 4128" d="M0,0H24V24H0Z" fill="none"/>
+            <path id="Path_4129" data-name="Path 4129" d="M20,11H7.83l5.59-5.59L12,4,4,12l8,8,1.41-1.41L7.83,13H20Z" fill="#214497"/>
+          </svg>
+
+        </div>
+        <div class="col-11">
+          <p class="text-center sp">Confirm Your Address</p>
+        </div>
+      </div>
+      <!-- 2nd part  -->
+      <div class="row">
+        <div class="col-md-6" *ngFor="let item of Addresss">
+          <label class="s" >{{item.label}}</label>
+          <input type="text" placeholder="{{item.placeholder}}" class="input-style">
+        </div>
+      </div>
+      <!-- 3rd part  -->
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label  class="s">Suite Appartment etc</label>
+          <input type="text" placeholder="Add Optional" class="input-style">
+        </div>
+        <div class="form-group col-md-6">
+          <label  class="s">Mailing State</label>
+          <div class="row">
+            <div class="col-3 mr-0 pr-0">
+              <select class="input-style-select">
+                <option value="1">KY</option>
+              </select>
+            </div>
+            <div class="col-9 ml-0 pl-0">
+              <input type="text" placeholder="Kentucky" class="input-style-select-input">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- 4th part  -->
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label  class="s">Mailing Country</label>
+          <div class="row">
+            <div class="col-3 mr-0 pr-0">
+              <select class="input-style-select">
+                <option value="1">UK</option>
+              </select>
+            </div>
+            <div class="col-9 ml-0 pl-0">
+              <input type="text" placeholder="United Kingdom" class="input-style-select-input">
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label  class="s">Mailing Zip Code</label>
+          <input type="text" placeholder="Mailing Zip Code" class="input-style">
+        </div>
+      </div>
+      <!-- 5th row  -->
+      <div class="row dsiplay-center">
+        <p class="text-center s provicy-text"> We’ll only share your address with web site visitors as outlined in our <a href="">privacy policy.</a> </p>
+      </div>
+      <!-- 6th row  -->
+      <div class="row  mt-4">
+        <div class="col-6 ">
+          <button class="btn-previous mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <g id="Group_3322" data-name="Group 3322" transform="translate(-8 -8)">
+                <g id="Icon_-_Chevron_Left_" data-name="Icon - Chevron (Left)" transform="translate(8 8)">
+                  <rect id="Rectangle_64" data-name="Rectangle 64" width="24" height="24" fill="#fff" opacity="0"/>
+                  <path id="Union_11" data-name="Union 11" d="M.293,13.021a1,1,0,0,1,0-1.415l4.95-4.95L.293,1.707A1,1,0,0,1,1.707.293L7.364,5.95a1,1,0,0,1,0,1.414L1.707,13.021a1,1,0,0,1-1.415,0Z" transform="translate(16 18.657) rotate(180)" fill="#fff"/>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="col-6 float-right">
+          <button class="btn-next mr-4">Next</button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+
+

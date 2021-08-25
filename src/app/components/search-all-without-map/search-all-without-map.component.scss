@@ -1,0 +1,125 @@
+agm-map {
+  height: 100vh;
+  width: 100%;
+}
+.btn-custom {
+  border: 1px solid lightgray;
+    background: transparent;
+    border-radius: 11px;
+    padding: 1px 13px;
+    color: #565D6D;
+    font-weight: 500;
+
+
+}
+.main-div {
+  height: 168px;
+  border: 1px solid#F5F5F5;
+  border-radius: 3px;
+  width: 100%;
+  position: relative;
+}
+
+.svg1 {
+  position: absolute;
+  top: 10px;
+    left: 10px;
+}
+.svg2 {
+  position: absolute;
+  top: 10px;
+    right: 10px;
+}
+.svg3 {
+  position: absolute;
+  bottom: 10px;
+    left: 10px;
+}
+.svg4 {
+  position: absolute;
+  bottom: 0;
+    right: 10px;
+}
+.count {
+  font-size: 6px;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  color: #565D6D;
+  font-family: Source Sans Pro;
+}
+
+.img-custom {
+  width: 100%;
+  height: 100%;
+}
+.new-btn {
+  position: relative;
+}
+.star-btn {
+  position: relative;
+  top: -156px;
+    float: right;
+
+}
+.youtube-btn {
+  position: relative;
+  bottom: 46px;
+  float: left;
+  left: 0;
+
+}
+
+
+.camera-btn {
+  position: relative;
+  bottom: 41px;
+  float: right;
+  left: 22px;
+
+}
+.svg-position {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+
+  vertical-align: middle;
+  display: flex;
+  padding-top: 48px;
+}
+
+.row-border {
+  border-bottom: 3px solid #E7E7E7;
+}
+.p-property {
+  color: #565D6D;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+}
+.span-property {
+  font-size: 30px;
+    font-weight: 500;
+    color: #565D6D;
+
+}
+.name-p {
+  color: #565D6D;
+    font-weight: 500;
+}
+.border-first {
+  border-bottom:3px solid #FFB506;
+}
+.border-second {
+  border-bottom:3px solid #214497;
+}
+.specific-end {
+  justify-content:flex-end;
+  display: flex;
+}
+.s {
+  color:#565D6D;
+  font-size:16px;
+  font-family:Source Sans Pro
+
+}
+

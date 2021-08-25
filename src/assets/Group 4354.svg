@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.001" height="107.001" viewBox="0 0 107.001 107.001">
+  <defs>
+    <filter id="backgroundCircle" x="0" y="0" width="107.001" height="107.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-color="#bfbfbf"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_4354" data-name="Group 4354" transform="translate(15272 9249)">
+    <g transform="matrix(1, 0, 0, 1, -15272, -9249)" filter="url(#backgroundCircle)">
+      <path id="backgroundCircle-2" data-name="backgroundCircle" d="M0,33.5A33.5,33.5,0,1,1,33.5,67,33.5,33.5,0,0,1,0,33.5Z" transform="translate(20 8)" fill="#214497" stroke="#214497" stroke-width="1"/>
+    </g>
+    <g id="qr_code_scanner_black_24dp" transform="translate(-15237.671 -9227)">
+      <rect id="Rectangle_1531" data-name="Rectangle 1531" width="40" height="40" transform="translate(-0.329)" fill="none"/>
+      <g id="Group_4529" data-name="Group 4529" transform="translate(6.563 7.5)">
+        <g id="Group_28" data-name="Group 28">
+          <path id="Path_19" data-name="Path 19" d="M2635.543,472.772h-9.813a.961.961,0,0,1-.962-.961v-9.2a.961.961,0,0,1,.962-.961h9.813a.961.961,0,0,1,.961.961v9.2A.961.961,0,0,1,2635.543,472.772Zm-8.851-1.923h7.889v-7.28h-7.889Z" transform="translate(-2624.768 -461.646)" fill="#fff"/>
+        </g>
+        <g id="Group_29" data-name="Group 29" transform="translate(14.483)">
+          <path id="Path_20" data-name="Path 20" d="M2650.025,472.772h-9.813a.961.961,0,0,1-.961-.961v-9.2a.961.961,0,0,1,.961-.961h9.813a.962.962,0,0,1,.962.961v9.2A.962.962,0,0,1,2650.025,472.772Zm-8.851-1.923h7.89v-7.28h-7.89Z" transform="translate(-2639.251 -461.646)" fill="#fff"/>
+        </g>
+        <g id="Group_30" data-name="Group 30" transform="translate(0 13.873)">
+          <path id="Path_21" data-name="Path 21" d="M2635.543,486.646h-9.813a.962.962,0,0,1-.962-.962v-9.2a.961.961,0,0,1,.962-.961h9.813a.961.961,0,0,1,.961.961v9.2A.961.961,0,0,1,2635.543,486.646Zm-8.851-1.923h7.889v-7.281h-7.889Z" transform="translate(-2624.768 -475.519)" fill="#fff"/>
+        </g>
+        <g id="Group_31" data-name="Group 31" transform="translate(14.483 13.873)">
+          <path id="Path_22" data-name="Path 22" d="M2650.025,486.646h-9.813a.961.961,0,0,1-.961-.962v-9.2a.961.961,0,0,1,.961-.961h9.813a.962.962,0,0,1,.962.961v9.2A.963.963,0,0,1,2650.025,486.646Zm-8.851-1.923h7.89v-7.281h-7.89Z" transform="translate(-2639.251 -475.519)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

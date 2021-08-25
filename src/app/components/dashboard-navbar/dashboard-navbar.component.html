@@ -1,0 +1,148 @@
+
+<nav class="navbar navbar-expand-xl border-start border-bottom py-3 fixed-top bg-white" id="nav" >
+  <div  class="container-fluid ">
+    <button class="btn  d-sm-none" type="button" data-bs-toggle="offcanvas" href="#sidebar-mob">
+      <i class="fas fa-bars fa-lg text-light-navy mt-2"></i>
+    </button>
+      <a class="navbar-brand ms-md-3 mb-0" routerLink="/">
+          <img id="logo" src="/assets/Newfolder/Logo Merchant.svg" alt="" height="40px">
+        </a>
+    <!-- <button class="btn  " type="button" data-bs-toggle="offcanvas" href="#offcanvasExample">
+      <i class="fas fa-ellipsis-v fa-lg text-light-navy mt-2"></i>
+    </button> -->
+    <div class="d-xl-none">
+      <button class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+       <img src="/assets/Mobile/Darko Moskovitz.svg" height="35" class="rounded-circle" alt="">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="links"  class="navbar-nav me-auto mb-2 mb-lg-0 mt-2 fw-bold">
+        <li class="nav-item px-4" *ngIf="currentState('wallet')">
+          <a class="nav-link text-light-navy" routerLink="/personal">Wallet</a>
+        </li>
+        <li class="nav-item px-4" *ngIf="currentState('merchant')">
+          <a class="nav-link text-light-navy pb-0 "  routerLink="/business" >Merchant</a>
+
+        </li>
+        <li class="nav-item px-4" *ngIf="currentState('common')">
+          <a class="nav-link text-light-navy pb-0 "  routerLink="/business">United States
+            <svg id="location_on_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path id="Path_4195" data-name="Path 4195" d="M0,0H24V24H0Z" fill="none"/>
+              <path id="Path_4196" data-name="Path 4196" d="M12,2A7,7,0,0,0,5,9c0,5.25,7,13,7,13s7-7.75,7-13A7,7,0,0,0,12,2ZM7,9A5,5,0,0,1,17,9c0,2.88-2.88,7.19-5,9.88C9.92,16.21,7,11.85,7,9Z" fill="#214497"/>
+              <circle id="Ellipse_174" data-name="Ellipse 174" cx="2.5" cy="2.5" r="2.5" transform="translate(9.5 6.5)" fill="#214497"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item px-4" *ngIf="currentState('common')">
+          <a class="nav-link text-light-navy pb-0 "  routerLink="/business">Rent</a>
+        </li>
+        <li class="nav-item px-4" *ngIf="currentState('common')">
+          <a class="nav-link text-light-navy pb-0 "  routerLink="/business">Buy</a>
+        </li>
+
+        <!-- search component  -->
+
+        <li class="nav-item px-4" *ngIf="currentState('specific')">
+          <a class="nav-link text-light-navy pb-0 "  routerLink="/business">Rent</a>
+        </li>
+        <li class="nav-item px-4" *ngIf="currentState('specific')">
+          <a class="nav-link text-light-navy pb-0 "  routerLink="/business">Buy</a>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li class="nav-item px-5" *ngIf="currentState('ACCOUNT')">
+          <button class="btn btn-bg" routerLink = "/linked-accounts/banking-info">Add your Bank Account</button>
+        </li>
+      </ul>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item px-4" *ngIf="currentState('specific')">
+          <a class="nav-link text-light-navy pb-0 "  routerLink="/business">United States
+            <svg id="location_on_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path id="Path_4195" data-name="Path 4195" d="M0,0H24V24H0Z" fill="none"/>
+              <path id="Path_4196" data-name="Path 4196" d="M12,2A7,7,0,0,0,5,9c0,5.25,7,13,7,13s7-7.75,7-13A7,7,0,0,0,12,2ZM7,9A5,5,0,0,1,17,9c0,2.88-2.88,7.19-5,9.88C9.92,16.21,7,11.85,7,9Z" fill="#214497"/>
+              <circle id="Ellipse_174" data-name="Ellipse 174" cx="2.5" cy="2.5" r="2.5" transform="translate(9.5 6.5)" fill="#214497"/>
+            </svg>
+          </a>
+        </li>
+          <li class="nav-item px-3">
+            <button class="btn mt-1" routerLink="/">
+              <img src="/assets/boxes.png" alt="">
+            </button>
+          </li>
+          <li class="nav-item px-3 position-relative">
+            <a routerLink="/sign-in">
+              <i class="far fa-bell text-light-navy fa-lg mt-3"></i>
+              <i class="fas fa-circle  position-absolute bell"></i>
+              <span class="text-dark fw-bold f-12 position-absolute text-white bell-no" *ngIf="notifications < 10">{{notifications}}</span>
+              <span class="text-dark fw-bold  position-absolute text-white bell-no-2" *ngIf="notifications > 9">{{notifications}}</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle text-light-navy"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/assets/Mobile/Darko Moskovitz.svg" height="40" class="rounded-circle" alt=""> Darko Moskovitz
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+              </ul>
+            </li>
+          <li class="nav-item dropdown px-3 mt-1">
+              <a class="nav-link dropdown-toggle text-light-navy" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                EN
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">FR</a></li>
+                <li><a class="dropdown-item" href="#">GR</a></li>
+                <li><a class="dropdown-item" href="#">SP</a></li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="d-flex border position-fixed p-2 py-0 top-bar rounded-3 aaa ">
+  <img src="/assets/logo-head.png" class="me-2 my-auto" height="25" alt="">
+  <button class="btn d-none d-md-block">
+    <img src="/assets/phone-plus.png" class="" alt="">
+  </button>
+  <button class="btn d-none d-md-block">
+    <img src="/assets/person-plus.png" class="" alt="">
+  </button>
+  <button class="btn d-none d-md-block">
+    <img src="/assets/video-plus.png" class="" alt="">
+  </button>
+  <button class="btn d-none d-md-block">
+    <img src="/assets/envelope-plus.png" class="" alt="">
+  </button>
+  <button class="btn d-none d-md-block">
+    <img src="/assets/support.png" class="" alt="">
+  </button>
+  <button class="btn">
+    <i class="fas fa-angle-double-down me-2 double-down light-gray"></i>
+  </button>
+</div>
+
+
+<div class="offcanvas offcanvas-start  " tabindex="-1" id="sidebar-mob" aria-labelledby="sidebar-desktopLabel">
+  <div class="offcanvas-body">
+    <app-sidebar-mob></app-sidebar-mob>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+
+<div class="d-flex ">
+    <div id="sidebar" class="position-absolute" >
+      <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="border-start w-100 " id="main-div">
+        <app-dashboard-navbar></app-dashboard-navbar>
+        <div class="border-start" id="inner">
+          <div class="py-5" [ngClass]="{'specific-top': currentState('common')}">
+            <router-outlet></router-outlet>
+          </div>
+
+</div>
+<app-footer2 class="footer-bottom"></app-footer2>
+</div>
+</div>
+

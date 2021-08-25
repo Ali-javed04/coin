@@ -1,0 +1,56 @@
+<div class="d-none d-md-flex justify-content-between border-start border-top p-3" id="footer">
+  <div>
+      <img src="/assets/Logov5.svg" alt="">
+      <p class="light-e7 small mb-0 fw-bold">Nicoin {{year}} All rights reserved, 
+          <a routerLink="/" class="light-e7 ">Terms of Use</a>
+          &
+          <a routerLink="/" class="light-e7 ">Privacy Policy.</a>
+      </p>
+  </div>
+  <div class="d-flex my-auto">
+      <p class="small fw-bold light-e7 me-4 mt-2">Follow Us</p>
+      <a href="{{socialLink.link}}" *ngFor="let socialLink of socialLinks">
+          <i class="fab {{socialLink.icon}} fa-lg fw-bold rounded-3 text-center icn me-4"></i>
+      </a>
+  </div>
+</div>
+
+<div class="d-flex justify-content-between d-md-none p-3 pb-2 border bg-white fixed-bottom" id="footer1">
+  <div class="d-flex justify-content-between" style="width: 30%;">
+      <div class="text-center">
+          <img src="/assets/Group 2076.svg" height="23" alt="">
+          <br>
+          <span class="f-11 text-secondary">Home</span>
+      </div>
+      
+      <div class="text-center">
+          <img src="/assets/Group 4092.svg" alt="" >
+          <br>
+          <span class="f-11 text-secondary">Feeds</span>
+      </div>
+      
+  </div>
+  <button class="btn position-absolute btn-light-navy rounded-circle scan">
+      <img src="/assets/qr_code_scanner.svg"  alt="">
+  </button>
+  <div class="d-flex w-50 justify-content-between">
+      <div class="text-center ml-6">
+          <img src="/assets/support_agent.svg"  alt="">
+          <br>
+          <span class="f-11 text-secondary">Contcts</span>
+      </div>
+      <div class="text-center">
+          <img src="/assets/Mobile/mail_black_24dp.svg" alt="">
+          <br><span class="f-11 text-secondary">Message</span>
+      </div>
+      <div class="dropdown">
+          <i class="fas fa-ellipsis-v text-light-navy mt-2 fa-lg pointer" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Action</a></li>
+          </ul>
+      </div>
+  </div>
+  
+</div>

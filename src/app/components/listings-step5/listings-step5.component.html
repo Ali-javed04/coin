@@ -1,0 +1,128 @@
+<div class="container-fluid">
+  <div class="col-md-6">
+    <div class="col-12 float-top">
+      <h4>My Listings</h4>
+    </div>
+    <div class="float-top1">
+      <svg id="arrow_back_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path id="Path_4128" data-name="Path 4128" d="M0,0H24V24H0Z" fill="none"/>
+        <path id="Path_4129" data-name="Path 4129" d="M20,11H7.83l5.59-5.59L12,4,4,12l8,8,1.41-1.41L7.83,13H20Z" fill="#214497"/>
+      </svg>
+
+    </div>
+
+       <!-- 2nd row  -->
+       <div class="container-fluid float-top2">
+         <div class="row">
+           <div class="col-md-12 ">
+             <p class="p-0 m-0 s postion-absoulte">Extra Details</p>
+            <div class="row ">
+              <div class="col-2 border-line-select m-0 p-0">
+
+                <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+             </div>
+             <div class="col-2 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+             </div>
+              <div class="col-1 postion-relative  border-line flex-end">
+                <div class="last-step">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <g id="Group_7242" data-name="Group 7242" transform="translate(14787 5002)">
+                      <g id="Ellipse_180" data-name="Ellipse 180" transform="translate(-14782 -4997)" fill="#ffb506" stroke="#ffb506" stroke-width="1">
+                        <circle cx="3" cy="3" r="3" stroke="none"/>
+                        <circle cx="3" cy="3" r="2.5" fill="none"/>
+                      </g>
+                      <g id="Ellipse_181" data-name="Ellipse 181" transform="translate(-14787 -5002)" fill="rgba(255,181,6,0.32)" stroke="#ffb506" stroke-width="1">
+                        <circle cx="8" cy="8" r="8" stroke="none"/>
+                        <circle cx="8" cy="8" r="7.5" fill="none"/>
+                      </g>
+                    </g>
+                  </svg>
+
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g id="Group_5757" data-name="Group 5757" transform="translate(24 24) rotate(180)">
+                    <g id="Component_114_374" data-name="Component 114 – 374" transform="translate(24 24) rotate(-180)">
+                      <g id="more_vert_black_24dp_1_" data-name="more_vert_black_24dp (1)">
+                        <path id="Path_4100" data-name="Path 4100" d="M0,0H24V24H0Z" fill="none"/>
+                        <path id="Path_4101" data-name="Path 4101" d="M12,8a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,8Zm0,2a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,10Zm0,6a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,16Z" fill="#214497"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+ <!-- 3th row  -->
+ <div class="row mt-4 ">
+  <div class="col-md-10">
+    <div class="row">
+      <div class="col-md-4 mt-2" *ngFor="let item of listofCheckboxes">
+        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" checked [(ngModel)]="item.value" name="chk-{{item.value}}"> <span class="ml-3 span-checkbox ml-4  ">{{item.label}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 4th row   -->
+<label class="s mt-4 pb-0 mb-0 ml-2">Extras</label>
+<div class="row ml-2 ">
+
+      <div class="col-md-3 mt-4 ml-0 pl-0" *ngFor="let item of listofExtras">
+        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" checked [(ngModel)]="item.value" name="chk-{{item.value}}"> <span class="ml-2 span-checkbox ml-4  ">{{item.label}}</span>
+      </div>
+
+</div>
+
+
+
+<!-- 5th row   -->
+<label class="s mt-4 pb-0 mb-0 ml-2">The Propertie is near</label>
+<div class="row ml-2 ">
+
+      <div class="col-md-3 mt-4 ml-0 pl-0" *ngFor="let item of listofProperties">
+        <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" checked [(ngModel)]="item.value" name="chk-{{item.value}}"> <span class="ml-2 span-checkbox ml-4  ">{{item.label}}</span>
+      </div>
+
+</div>
+
+
+
+
+
+
+
+         <!-- 6th row  -->
+         <div class="row  mt-4">
+          <div class="col-6 ">
+            <button class="btn-previous mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g id="Group_3322" data-name="Group 3322" transform="translate(-8 -8)">
+                  <g id="Icon_-_Chevron_Left_" data-name="Icon - Chevron (Left)" transform="translate(8 8)">
+                    <rect id="Rectangle_64" data-name="Rectangle 64" width="24" height="24" fill="#fff" opacity="0"/>
+                    <path id="Union_11" data-name="Union 11" d="M.293,13.021a1,1,0,0,1,0-1.415l4.95-4.95L.293,1.707A1,1,0,0,1,1.707.293L7.364,5.95a1,1,0,0,1,0,1.414L1.707,13.021a1,1,0,0,1-1.415,0Z" transform="translate(16 18.657) rotate(180)" fill="#fff"/>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="col-6 float-right">
+            <button class="btn-next mr-4">Next</button>
+          </div>
+        </div>
+  </div>
+
+
+
+</div>
+

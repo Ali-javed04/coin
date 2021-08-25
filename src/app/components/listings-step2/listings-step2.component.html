@@ -1,0 +1,104 @@
+
+ <div class="container-fluid">
+  <div class="col-md-6">
+    <!-- ist row  -->
+    <div class="col-12 float-top mb-4 p-0">
+      <h4>My Listings</h4>
+    </div>
+
+
+       <!-- 2nd row  -->
+       <div class="container-fluid float-top2">
+         <div class="row">
+           <div class="col-md-12">
+             <p class="p-0 m-0 s postion-absoulte">Propertie Type</p>
+            <div class="row">
+              <div class="col-2 border-line-select m-0 p-0">
+
+                <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line m-0 p-0">
+
+               <span class="dot p-0 m-0"></span>
+             </div>
+             <div class="col-2 border-line m-0 p-0">
+
+               <span class="dot p-0 m-0"></span>
+             </div>
+              <div class="col-1 postion-relative  border-line flex-end">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g id="Group_5757" data-name="Group 5757" transform="translate(24 24) rotate(180)">
+                    <g id="Component_114_374" data-name="Component 114 – 374" transform="translate(24 24) rotate(-180)">
+                      <g id="more_vert_black_24dp_1_" data-name="more_vert_black_24dp (1)">
+                        <path id="Path_4100" data-name="Path 4100" d="M0,0H24V24H0Z" fill="none"/>
+                        <path id="Path_4101" data-name="Path 4101" d="M12,8a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,8Zm0,2a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,10Zm0,6a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,16Z" fill="#214497"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+   <!-- 3rd row  -->
+
+
+   <!-- 4th row  -->
+
+
+  <!-- 5th row  -->
+  <div class="mt-4">
+    <div class="row">
+      <div class="button-div col-md-3 ml-4 mr-4 mt-4 " [ngClass]="{'button-active': selectedValue1 ==i}" (click)="selectedTab1(i)" *ngFor="let item of properties; let i = index">
+        <div class="row">
+          <div class="col-7">
+            <span>{{item.name}}</span>
+          </div>
+          <div class="col-5" *ngIf="selectedValue1 ==i">
+            <div class="float-right">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13.214" height="13.214" viewBox="0 0 13.214 13.214">
+                <path id="Vector" d="M6.607,0a6.607,6.607,0,1,0,6.607,6.607A6.614,6.614,0,0,0,6.607,0ZM5.286,9.523,2.833,7.075l.933-.936L5.285,7.655,9.113,3.827l.934.934Z" fill="#294989"/>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+        <div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 6th row  -->
+  <div class="row">
+    <div class="col-md-6 mt-4" *ngFor="let item of SelectTabs">
+      <label >{{item.label}}</label>
+      <select class="select">
+        <option *ngFor="let option of item.options" value="{{option.value}}">{{option.name}}</option>
+      </select>
+
+    </div>
+  </div>
+   <!-- 7th row  -->
+   <div class="row">
+    <div class="col-md-6 mt-4" *ngFor="let item of selectedinput">
+      <label >{{item.label}}</label>
+      <input type="text" class="select" [(ngModel)]="item.values" placeholder="{{item.values}}">
+
+    </div>
+  </div>
+  <!-- 8th row  -->
+
+  <div class="row float-right mt-4">
+    <div class="col-md-3 mr-4">
+      <button class="btn-next mr-4">Next</button>
+    </div>
+  </div>
+</div>

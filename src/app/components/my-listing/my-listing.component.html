@@ -1,0 +1,75 @@
+
+ <div class="container-fluid">
+   <div class="col-md-6">
+     <!-- ist row  -->
+     <div class=" float-top mb-4 p-0">
+      <h4>My Listings</h4>
+    </div>
+
+
+       <!-- 2nd row  -->
+       <div class="container-fluid float-top2">
+         <div class="row">
+
+             <p class="p-0 m-0 s postion-absoulte">Create a Free Listing</p>
+            <div class="row">
+              <div class="col-2 border-line-select m-0 p-0">
+
+
+              </div>
+              <div class="col-3 border-line m-0 p-0">
+
+
+              </div>
+              <div class="col-3 border-line m-0 p-0">
+
+
+             </div>
+             <div class="col-2 border-line m-0 p-0">
+
+
+             </div>
+              <div class="col-1 postion-relative  border-line flex-end">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g id="Group_5757" data-name="Group 5757" transform="translate(24 24) rotate(180)">
+                    <g id="Component_114_374" data-name="Component 114 – 374" transform="translate(24 24) rotate(-180)">
+                      <g id="more_vert_black_24dp_1_" data-name="more_vert_black_24dp (1)">
+                        <path id="Path_4100" data-name="Path 4100" d="M0,0H24V24H0Z" fill="none"/>
+                        <path id="Path_4101" data-name="Path 4101" d="M12,8a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,8Zm0,2a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,10Zm0,6a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,16Z" fill="#214497"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+         </div>
+       </div>
+    <!-- 3rd row  -->
+    <div class="row mt-4 mb-4">
+      <p>Buy & Sell products and services in your local currency or Digital Currency</p>
+    </div>
+
+    <!-- 4th row  -->
+    <div class="row">
+      <div class="col-9">
+        <div class="row">
+          <div class="col-md-6" *ngFor="let item of buttonList">
+            <div class="div" >
+
+              <button class=" btn-custom">
+                <span class="plus">+</span>
+                <p class="pt-3 color-p">{{ item.name}}</p> </button>
+              <p>{{item.dis}}</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+   </div>
+ </div>

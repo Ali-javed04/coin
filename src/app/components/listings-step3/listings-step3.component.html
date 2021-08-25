@@ -1,0 +1,101 @@
+
+<div class="container-fluid">
+  <div class="specifc-way" >
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+
+    <div class="col-12 float-top">
+      <h4 >My Listings</h4>
+    </div>
+    <div class="float-top1">
+      <svg id="arrow_back_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path id="Path_4128" data-name="Path 4128" d="M0,0H24V24H0Z" fill="none"/>
+        <path id="Path_4129" data-name="Path 4129" d="M20,11H7.83l5.59-5.59L12,4,4,12l8,8,1.41-1.41L7.83,13H20Z" fill="#214497"/>
+      </svg>
+
+    </div>
+
+       <!-- 2nd row  -->
+       <div class="container-fluid float-top2">
+         <div class="row">
+           <div class="col-md-6">
+             <p class="p-0 m-0 s absolute">Add a free Listing</p>
+            <div class="row">
+              <div class="col-2 border-line-select m-0 p-0">
+
+                <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+              </div>
+              <div class="col-3 border-line-select m-0 p-0">
+
+               <span class="dot1 p-0 m-0"></span>
+             </div>
+             <div class="col-2 border-line m-0 p-0">
+
+               <span class="dot p-0 m-0"></span>
+             </div>
+              <div class="col-1 border-line flex-end">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <g id="Group_5757" data-name="Group 5757" transform="translate(24 24) rotate(180)">
+                    <g id="Component_114_374" data-name="Component 114 – 374" transform="translate(24 24) rotate(-180)">
+                      <g id="more_vert_black_24dp_1_" data-name="more_vert_black_24dp (1)">
+                        <path id="Path_4100" data-name="Path 4100" d="M0,0H24V24H0Z" fill="none"/>
+                        <path id="Path_4101" data-name="Path 4101" d="M12,8a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,8Zm0,2a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,10Zm0,6a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,16Z" fill="#214497"/>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+           </div>
+         </div>
+       </div>
+
+
+
+
+  <div class="col-12 float-center">
+    <div class="row abc-center">
+      <div class="col-md-5 custom-bg p-4 ">
+        <div class="form-control border-none" [ngClass]="{active: selectedValue ==1}" (click)="selectedTab(1)">
+          <span>
+            <svg id="location_on_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path id="Path_4195" data-name="Path 4195" d="M0,0H24V24H0Z" fill="none"/>
+              <path id="Path_4196" data-name="Path 4196" d="M12,2A7,7,0,0,0,5,9c0,5.25,7,13,7,13s7-7.75,7-13A7,7,0,0,0,12,2ZM7,9A5,5,0,0,1,17,9c0,2.88-2.88,7.19-5,9.88C9.92,16.21,7,11.85,7,9Z" fill="#214497"/>
+              <circle id="Ellipse_174" data-name="Ellipse 174" cx="2.5" cy="2.5" r="2.5" transform="translate(9.5 6.5)" fill="#214497"/>
+            </svg>
+          </span>
+          <span class="s ml-3"> Enter your Address</span>
+        </div>
+        <div class="form-control border-none" [ngClass]="{active: selectedValue ==2}" (click)="selectedTab(2)">
+          <span class="border">
+            <svg id="my_location_black_24dp" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path id="Path_4343" data-name="Path 4343" d="M0,0H24V24H0Z" fill="none"/>
+              <path id="Path_4344" data-name="Path 4344" d="M12,8a4,4,0,1,0,4,4A4,4,0,0,0,12,8Zm8.94,3A8.994,8.994,0,0,0,13,3.06V1H11V3.06A8.994,8.994,0,0,0,3.06,11H1v2H3.06A8.994,8.994,0,0,0,11,20.94V23h2V20.94A8.994,8.994,0,0,0,20.94,13H23V11H20.94ZM12,19a7,7,0,1,1,7-7A6.995,6.995,0,0,1,12,19Z" fill="#214497"/>
+            </svg>
+          </span>
+         <span class="s ml-3"> Use your Current Location</span>
+         <span class="float-right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <g id="Group_3344" data-name="Group 3344" transform="translate(-80 589) rotate(-90)">
+              <rect id="Rectangle_64" data-name="Rectangle 64" width="24" height="24" transform="translate(565 80)" fill="#003167" opacity="0"/>
+              <path id="Union_11" data-name="Union 11" d="M.293,13.021a1,1,0,0,1,0-1.414l4.95-4.95L.293,1.707A1,1,0,0,1,1.707.293L7.364,5.95a1,1,0,0,1,0,1.415L1.707,13.021a1,1,0,0,1-1.415,0Z" transform="translate(583.829 88.171) rotate(90)" fill="#003167"/>
+            </g>
+          </svg>
+         </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-button">
+    <button class="button-back">Back</button>
+  </div>
+</div>
+</div>
+
+

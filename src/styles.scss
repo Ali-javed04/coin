@@ -1,0 +1,418 @@
+/* You can add global styles to this file, and also import other style files */
+/* :root
+{
+    --navy:#1F2368;
+    --light-navy:#33497D;
+    --yellow:#FFBC00;
+    --form-check-input-checked-color: #FFBC00;
+    --color_fill:#FFBC00;
+} */
+.fm {
+  fill: #FFBC00;
+  color:#FFBC00;
+}
+.bg-navy
+{
+   background-color: var(--navy);
+}
+
+.bg-yellow
+{
+   background-color: var(--yellow);
+}
+
+.text-yellow
+{
+   color: var(--yellow);
+}
+
+.text-navy
+{
+   color: var(--navy);
+}
+
+button:focus-visible
+{
+   outline: none;
+}
+
+.form-control:focus, .btn:focus
+{
+   box-shadow: none;
+}
+
+a
+{
+   text-decoration: none;
+}
+.border-bottom2 {
+   border-bottom: 1px solid #EFEFEF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root
+{
+   --navy:#214497;
+   --light-navy:#214497;
+   --yellow:#FFBC00;
+}
+
+
+
+button:focus-visible
+{
+   outline: none;
+}
+
+
+
+.cart-item
+{
+   padding: 4px 6px 4px 6px;
+   left:15px;
+   top: -3px;
+}
+
+.border-yellow
+{
+   border:2px solid var(--yellow);
+}
+.w-508 {
+   width: 508px;
+}
+.height-56 {
+   height: 56px;
+}
+.f-16 {
+   font-size: 16px;
+}
+.f-14 {
+   font-size: 14px;
+}
+.f-12 {
+   font-size: 12px;
+}
+.text-light-navy
+{
+   color: #9496b1;
+}
+
+.text-navy
+{
+   color: #214497;
+}
+.text-bold {
+
+   font-size: 18px;
+   font-family: 'Source Sans Pro';
+   color: #212529;
+   font-weight: 600;
+}
+.link-color {
+   color: #2A99FB;
+  }
+  .btn-bg
+{
+    background-color: #ffb506;
+    color: white;
+}
+  .btn-bg:hover
+{
+   background-color:  #214497;
+   color: white;
+}
+.outline-btn {
+ color: #003167;
+ border: 1px solid #003167
+}
+.outline-btn:hover{
+ color: #003167;
+ border: 1px solid  #ffb506;
+}
+.btn-blue {
+   background-color:  #214497;
+   color: white;
+}
+
+
+
+#sidebar
+{
+   width: 60px;
+   height: 100vh;
+   transition: 0.7s;
+}
+.footer-bottom
+{
+   margin-top: auto ;
+}
+a
+{
+   text-decoration: none;
+}
+.mob-menu
+{
+   width: 250px;
+}
+
+.pointer
+{
+   cursor: pointer;
+}
+.text-light-navy
+{
+   color: var(--light-navy);
+}
+
+.btn-light-navy-outline
+{
+   color: var(--light-navy);
+   border: 2px solid var(--light-navy);
+}
+
+
+.btn-light-navy-outline:hover
+{
+   color: var(--yellow);
+   border: 2px solid var(--yellow);
+}
+.underline
+{
+   width: 160px;
+   height: 3px;
+   color: #FFB506;
+   opacity: 1;
+}
+.underline2
+{
+   width: 100%;
+   height: 3px;
+   color: #214497;
+   opacity: 1;
+}
+@media (max-width: 768px) {
+   .underline
+{
+   width: 190px;
+   height: 20px;
+   color: #FFB506;
+   /* opacity: 4;  */
+}
+}
+@media (min-width: 0px)
+{
+   .my-py
+   {
+       padding-top: 60px ;
+       padding-bottom: 110px;
+   }
+}
+
+@media (min-width: 768px)
+{
+   .my-py
+   {
+       padding-top: 80px ;
+       padding-bottom: 50px;
+   }
+}
+.f-11
+{
+   font-size: 11px;
+}
+.btn-yellow:hover
+{
+   background-color: var(--light-navy);
+}
+.btn-light-navy
+{
+   background-color: var(--light-navy);
+}
+.btn-light-navy:hover
+{
+   background-color: var(--yellow);
+}
+@media (min-width: 576px)
+{
+   .log-reg-border
+   {
+       border: 1px solid rgba(0,0,0,.125) !important;
+   }
+   #sidebar
+   {
+       width: 60px;
+       height: 100vh;
+   }
+}
+
+@media (max-width: 575.99px)
+{
+   #sidebar
+   {
+       display: none;
+   }
+}
+
+
+
+
+
+@media (max-width: 767.99px)
+{
+   .my-py
+   {
+       padding-top: 60px ;
+       padding-bottom: 110px;
+   }
+}
+
+@media (min-width: 768px)
+{
+   .my-py
+   {
+       padding-top: 80px ;
+       padding-bottom: 50px;
+   }
+}
+
+
+#nav, #logo, #footer, #sidebar, #main-div
+{
+   transition: .7s;
+}
+
+.scan
+{
+   padding:9px;
+   height: 65px;
+   width: 65px;
+   top: -30px;
+   left: calc(50% - 32.5px);
+}
+
+.btn-shadow
+{
+   box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.4);
+}
+
+.rounded-9
+{
+   border-radius: 9px;
+}
+
+
+.picture-upload>input
+{
+   display: none;
+}
+
+.mt-25
+{
+   margin-top: 25px;
+}
+
+.drop
+{
+   background-color: #F2F2F2;
+   border-radius: .25rem 0 0 .25rem;
+}
+
+.input
+{
+   border-radius: 0 .25rem .25rem 0;
+}
+
+.form-check-input:focus
+{
+   box-shadow: none;
+}
+
+.plus-icn
+{
+   color: #455EEC;
+   border:2px solid #455EEC;
+   height: 24px;
+   width: 24px;
+   padding: 2px 0 0 3.5px;
+   top:15px;
+}
+
+/* sidebar */
+
+.sidebar-icons
+{
+   fill:#fdb415;
+}
+
+.sidebar-icons-active
+{
+   fill:#214497;
+}
+
+.m-settings, .m-home
+{
+   margin-left: 12px;
+}
+
+.m-profile
+{
+   margin-left: 6px;
+}
+
+.m-contcts
+{
+   margin-left: 10px;
+}
+
+.link-color
+{
+   color: #565d6d;
+}
+
+.mt-n10
+{
+   margin-top: -10px;
+}
+
+
+.open-btn-p
+{
+   padding: 32px 20px 32px 21px;
+}
+
+.pt-110
+{
+   padding-top: 110px;
+}
+
+.ml
+{
+   margin-left: -3px;
+}
+
+.offcanvas-start
+{
+   width: 250px;
+   transition: .5s ease-in-out;
+}
+@media (max-height: 957px)
+{
+   #main-div
+   {
+       min-height: 957px;
+       display: flex;
+       flex-direction: column;
+       padding-top: 65px;
+   }
+}
+
+@media (min-height: 957px)
+{
+   #main-div
+   {
+       min-height: 100vh;
+       display: flex;
+       flex-direction: column;
+       padding-top: 65px;
+   }
+}
